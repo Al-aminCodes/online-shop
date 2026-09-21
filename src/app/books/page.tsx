@@ -19,7 +19,7 @@ const page = async () => {
   console.log(booksData);
   return (
     <section className="container mx-auto my-8 p6">
-      <h1>Books Popular</h1>
+      
       <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {booksData.map((book: IBook, ind: number) => (
           <BookCard key={ind} book={book}></BookCard>

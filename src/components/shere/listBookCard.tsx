@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
 import { IBook } from "../type/bookstype";
-import { FiTrash2 } from "react-icons/fi";
+
+import DeleteButton from "./deleteList";
 
 const ListBookCard = ({ book }: { book: IBook }) => {
   return (
@@ -37,14 +38,7 @@ const ListBookCard = ({ book }: { book: IBook }) => {
             </div>
 
             {/* Delete */}
-            <button
-              type="button"
-              //   onClick={() => onDelete(book.bookId)}
-              aria-label={`Delete ${book.bookName}`}
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-400 transition-all duration-200 hover:border-red-100 hover:bg-red-50 hover:text-red-500"
-            >
-              <FiTrash2 size={16} />
-            </button>
+            <DeleteButton book={book}></DeleteButton>
           </div>
 
           {/* Tags + Year */}

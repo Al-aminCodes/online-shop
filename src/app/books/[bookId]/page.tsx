@@ -35,7 +35,7 @@ const BookDatails = async ({ params }: IBookDatailsPros) => {
       <div className="mx-auto max-w-6xl">
         {/* Back */}
         <Link
-          href="/"
+          href="/books"
           className="mb-6 inline-block text-sm font-medium text-slate-500 hover:text-slate-900"
         >
           ← Back to Books
