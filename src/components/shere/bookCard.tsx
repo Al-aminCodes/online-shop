@@ -55,13 +55,13 @@ const BookCard = ({ book }: IBookProb) => {
       </div>
 
       {/* Buttons */}
-      <div className="mt-4 grid grid-cols-2 gap-2">
-        <button
-          type="button"
-          className="flex items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-700"
-        >
-          Add
-        </button>
+      <div className="mt-4 grid grid-cols-1 gap-2">
+        {/* <button
+            type="button"
+            className="flex items-center justify-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-700"
+          >
+            Add
+          </button> */}
 
         <Link
           href={`/books/${book.bookId}`}

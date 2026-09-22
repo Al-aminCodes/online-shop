@@ -96,7 +96,9 @@ const ReadBooks = () => {
           {/* <RechartsDevtools /> */}
         </BarChart>
       ) : (
-        <p className="text-3xl font-bold text-center">NO Add to read books</p>
+        <p className="text-3xl font-bold text-center flex items-center justify-center bg-gray-400 rounded-2xl h-30 w-200">
+          NO Add to read books
+        </p>
       )}
     </div>
   );

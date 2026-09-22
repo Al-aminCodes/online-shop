@@ -1,25 +1,21 @@
+import AddtoCard from "@/components/booksDatails/addBotton";
 import ReadsBotton from "@/components/booksDatails/ReadsBotton";
 import WishlistButton from "@/components/booksDatails/WishlistButton";
 import { IBook } from "@/components/type/bookstype";
+import { getBooks } from "@/lib/booksDate";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 interface IBookDatailsPros {
   params: Promise<{ bookId: string }>;
 }
-const getBooks = async () => {
-  try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/booksData.json`,
-    );
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    console.log("Data fetching fills", error);
-    return [];
-  }
+export const generateStaticParams = async () => {
+  const booksData = await getBooks();
+  return booksData.slice(0, 5).map((book: IBook) => {
+    return { bookId: book.bookId.toString() };
+  });
 };
-
 const BookDatails = async ({ params }: IBookDatailsPros) => {
   const { bookId } = await params;
   const booksData = await getBooks();
@@ -28,7 +24,7 @@ const BookDatails = async ({ params }: IBookDatailsPros) => {
   );
 
   if (!book) {
-    return <div>Book not found</div>;
+    notFound();
   }
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10">
@@ -157,6 +153,7 @@ const BookDatails = async ({ params }: IBookDatailsPros) => {
 
               {/* Buttons */}
               <div className="mt-7 flex gap-3">
+                <AddtoCard book={book}></AddtoCard>
                 <ReadsBotton book={book} />
                 <WishlistButton book={book}></WishlistButton>
               </div>
