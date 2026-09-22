@@ -31,13 +31,15 @@ const Navber = () => {
             </div>
 
             {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center gap-3 text-2xl font-bold"
-            >
-              <Image src={logo} alt="Book Vibe logo" width={35} height={35} />
-              Book Vibe
-            </Link>
+            <div className="hidden md:block">
+              <Link
+                href="/"
+                className="flex items-center gap-3 text-2xl font-bold "
+              >
+                <Image src={logo} alt="Book Vibe logo" width={35} height={35} />
+                Book Vibe
+              </Link>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

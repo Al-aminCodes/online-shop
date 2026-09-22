@@ -24,7 +24,7 @@ const Cart = () => {
       ) : (
         <div className="border border-gray-300 rounded-2xl m-10">
           <h2 className="text-4xl font-bold text-center my-20">
-            Products not Added{" "}
+            books not Added{" "}
           </h2>
         </div>
       )}
