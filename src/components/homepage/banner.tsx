@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import banner from "@/assets/hero_img.jpg";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -31,9 +32,11 @@ const Banner = () => {
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
-              <button className="rounded-xl bg-green-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-700 hover:shadow-xl">
-                View The List →
-              </button>
+              <Link href={"/listItem"}>
+                <button className="rounded-xl bg-green-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-green-600/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-green-700 hover:shadow-xl">
+                  View The List →
+                </button>
+              </Link>
 
               <button className="rounded-xl border border-slate-200 bg-white px-7 py-3.5 font-semibold text-slate-700 transition-all duration-200 hover:border-green-300 hover:bg-green-50">
                 Explore Categories
