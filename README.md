@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 Online Book Shop
 
-## Getting Started
+A modern and responsive **Online Book Shop** where users can explore books, view book details, add books to their cart, create a reading list, and manage their wishlist.
 
-First, run the development server:
+🔗 **Live Website:** https://online-shop-wine-alpha.vercel.app/
+
+---
+
+## ✨ Features
+
+- 📖 Browse available books
+- 🔎 View detailed information about each book
+- 🛒 Add books to the shopping cart
+- 📚 Add books to the reading list
+- ❤️ Add books to the wishlist
+- 🗂️ Browse books by category
+- ⭐ View book ratings
+- 📱 Responsive design for different screen sizes
+- ⚡ Fast and modern user interface
+
+---
+
+## 🛠️ Technologies Used
+
+- **React**
+- **Next.js**
+- **TypeScript**
+- **CSS**
+- **Vercel**
+
+---
+
+## 📄 Pages
+
+### 🏠 Home Page
+
+The home page provides an introduction to the book shop and displays featured/popular books.
+
+### 📚 Books Page
+
+Users can browse the available books and interact with the book collection.
+
+### 📖 Book Details Page
+
+Users can view detailed information about a selected book, including:
+
+- Book title
+- Author
+- Rating
+- Number of pages
+- Description
+- Category
+- Tags
+- Publisher
+- Publication year
+
+Users can also:
+
+- Add the book to the cart
+- Add the book to the reading list
+- Add the book to the wishlist
+- Delete the book to the cart, reading list, wishlist
+- Add the Navbar cart icon and count showing when that the item in cart 
+
+---
+
+## 📚 Books
+
+Some of the books included in the project are:
+
+- **The Great Gatsby** — F. Scott Fitzgerald
+- **To Kill a Mockingbird** — Harper Lee
+- **1984** — George Orwell
+- **The Catcher in the Rye** — J.D. Salinger
+- **Pride and Prejudice** — Jane Austen
+- **The Hobbit** — J.R.R. Tolkien
+
+---
+
+## 🎯 Project Purpose
+
+The main purpose of this project is to practice modern frontend development by building a real-world book shop application.
+
+Through this project, I practiced:
+
+- React components
+- Next.js routing
+- Dynamic pages
+- Data rendering
+- State management
+- User interactions
+- Responsive UI design
+- Reusable components
+- Generate static params
+
+---
+
+## 🚀 Run the Project Locally
+
+### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone YOUR_GITHUB_REPOSITORY_URL
